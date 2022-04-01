@@ -1,0 +1,26 @@
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    red,
+    yellow,
+    orange,
+    purple,
+    blue,
+    purple,
+    orange,
+    yellow,
+    red
+  );
+}
+p {
+  color: black;
+  font-size: x-large;
+}
+h1 {
+  color: black;
+  font-size: xx-large;
+}
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

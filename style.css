@@ -1,26 +1,45 @@
 body {
-  background-image: linear-gradient(
-    to bottom right,
-    red,
-    yellow,
-    orange,
-    purple,
-    blue,
-    purple,
-    orange,
-    yellow,
-    red
-  );
+  background-color: red;
+  background-image: linear-gradient(to left, yellow, red, blue, aqua);
 }
 p {
-  color: black;
-  font-size: x-large;
+  color: blue;
+  font-size: larger;
 }
-h1 {
-  color: black;
-  font-size: xx-large;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(17, 17, 17);
+}
+
+.active {
+  background-color: #73ff00fa;
+}
+
+#mybox {
+  width: 200px;
+  height: 200px;
+  background-name: animation;
+  animation-duration: 5s;
+}
+@keyframes {
 }

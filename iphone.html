@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Iphone</title>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="#iphone">sign up</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#contact">Ipad</a></li>
+      <li><a href="#about">Mac</a></li>
+      <img
+        id="profpic"
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+    
+     
+      />
+    </ul>
+
+    <form>
+      <h2>First Name</h2>
+      <input type="text" />
+
+      <h2>Last Name</h2>
+      <input type="text" />
+      <br />
+      <input type="radio" />
+      <br />
+      <input type="radio" />
+      <br />
+      <input type="submit" />
+      <br />
+      <input id="colorpick" onchange="changeBG()" type="color" />
+      <input id="MyPic" onchange="changePic()" type="file" />
+    </form>
+
+    <script>
+      function changeBG() {
+        var newcolor = document.getElementById("colorpick").value;
+        document.body.style.background = newcolor;
+      }
+      function changePic() {
+        var newPic = document.getElementById("MyPic").files[0].name;
+        document.getElementById("profpic").src = newPic;
+      }
+    </script>
+  </body>
+</html>

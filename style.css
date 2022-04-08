@@ -1,12 +1,29 @@
 body {
-  background-color: red;
-  background-image: linear-gradient(to left, yellow, red, blue, aqua);
+  background-image: linear-gradient(
+    to bottom right,
+    red,
+    yellow,
+    orange,
+    purple,
+    blue,
+    purple,
+    orange,
+    yellow,
+    red
+  );
 }
 p {
-  color: blue;
-  font-size: larger;
+  color: black;
+  font-size: x-large;
 }
-
+h1 {
+  color: black;
+  font-size: xx-large;
+}
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -21,25 +38,24 @@ li {
 
 li a {
   display: block;
-  color: rgb(255, 255, 255);
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: rgb(17, 17, 17);
+li a:hover {
+  background-color: #111;
+}
+h2 {
+  color: red;
+}
+input {
+  float: right;
 }
 
-.active {
-  background-color: #73ff00fa;
-}
-
-#mybox {
-  width: 200px;
-  height: 200px;
-  background-name: animation;
-  animation-duration: 5s;
-}
-@keyframes {
+#profpic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
